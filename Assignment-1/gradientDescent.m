@@ -22,10 +22,10 @@ for iter = 1:num_iters
 		sqrErrors2 = (predict-y).*X(:,2);
 		Der1 = 1/m*sum(sqrErrors1);
 		Der2 = 1/m*sum(sqrErrors2);
-    		temp1 = theta(1)-alpha*Der1;
-		temp2 = theta(2)-alpha*Der2;
-    		theta(1) = temp1;
-    		theta(2) = temp2;
+temp1 = theta(1)-alpha*Der1;
+temp2 = theta(2)-alpha*Der2;
+theta(1) = temp1;
+theta(2) = temp2;
 
        
     % ============================================================

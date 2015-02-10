@@ -60,7 +60,7 @@ iterations = 1500;
 alpha = 0.01;
 
 % compute and display initial cost
-computeCost(X, y, theta);
+computeCost(X, y, theta)
 
 % run gradient descent
 theta = gradientDescent(X, y, theta, alpha, iterations);
@@ -120,4 +120,3 @@ contour(theta0_vals, theta1_vals, J_vals, logspace(-2, 3, 20))
 xlabel('\theta_0'); ylabel('\theta_1');
 hold on;
 plot(theta(1), theta(2), 'rx', 'MarkerSize', 10, 'LineWidth', 2);
-
